@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Learning Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="#" class="brand">JS<span>Lab</span></a>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#playground">Playground</a>
+            <a href="#tasks">Tasks</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <p class="eyebrow">IYF SEASON 12 · WEEK 04</p>
+
+            <h1>Learn JavaScript<br>
+                <span>by doing.</span>
+            </h1>
+
+            <p class="hero-copy">
+                A simple interactive dashboard to practise
+                JavaScript variables, functions, events and DOM manipulation.
+            </p>
+
+            <a href="#playground" class="primary-link">
+                Explore Playground →
+            </a>
+        </section>
+
+        <section class="section" id="playground">
+            <div class="section-heading">
+                <p class="eyebrow">INTERACTIVE PRACTICE</p>
+                <h2>JavaScript Playground</h2>
+                <p>Try the controls and see JavaScript in action.</p>
+            </div>
+
+            <div class="card-grid">
+
+                <!-- Greeting Card -->
+                <article class="card">
+                    <div class="card-icon">✦</div>
+
+                    <h3>Personal Greeting</h3>
+                    <p>Enter your name to receive a greeting.</p>
+
+                    <form id="greeting-form">
+                        <label for="name-input">Your Name</label>
+
+                        <div class="input-row">
+                            <input
+                                type="text"
+                                id="name-input"
+                                placeholder="Enter your name"
+                                maxlength="40"
+                            >
+
+                            <button type="submit">Greet Me</button>
+                        </div>
+                    </form>
+
+                    <p id="greeting-output" class="result">
+                        Your greeting will appear here.
+                    </p>
+                </article>
+
+                <!-- Counter Card -->
+                <article class="card">
+                    <div class="card-icon">＋</div>
+
+                    <h3>Click Counter</h3>
+                    <p>Practise variables and event listeners.</p>
+
+                    <p id="counter-value" class="counter">0</p>
+
+                    <div class="button-row">
+                        <button id="decrease-btn">−</button>
+                        <button id="reset-btn" class="secondary-button">
+                            Reset
+                        </button>
+                        <button id="increase-btn">+</button>
+                    </div>
+                </article>
+
+                <!-- Theme Card -->
+                <article class="card">
+                    <div class="card-icon">◐</div>
+
+                    <h3>Display Theme</h3>
+                    <p>Switch between light and dark mode.</p>
+
+                    <button id="theme-btn" class="secondary-button">
+                        Switch to Dark Mode
+                    </button>
+
+                    <p id="theme-status" class="result">
+                        Light mode is active.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section task-section" id="tasks">
+            <div class="section-heading">
+                <p class="eyebrow">LEARNING CHECKLIST</p>
+                <h2>What I Have Learned</h2>
+                <p>Tick the concepts after reviewing them.</p>
+            </div>
+
+            <div class="task-list">
+
+                <label class="task-item">
+                    <input type="checkbox">
+                    <span>
+                        <strong>Variables</strong>
+                        <small>Using let and const.</small>
+                    </span>
+                </label>
+
+                <label class="task-item">
+                    <input type="checkbox">
+                    <span>
+                        <strong>Functions</strong>
+                        <small>Creating reusable instructions.</small>
+                    </span>
+                </label>
+
+                <label class="task-item">
+                    <input type="checkbox">
+                    <span>
+                        <strong>Events</strong>
+                        <small>Responding to user actions.</small>
+                    </span>
+                </label>
+
+                <label class="task-item">
+                    <input type="checkbox">
+                    <span>
+                        <strong>DOM Manipulation</strong>
+                        <small>Updating webpage content.</small>
+                    </span>
+                </label>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built for IYF Season 12 · Week 04</p>
+        <p>Keep learning. Keep building. Keep committing.</p>
+    </footer>
+
+</body>
+  </html>
+  
